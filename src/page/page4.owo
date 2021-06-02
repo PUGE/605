@@ -1,0 +1,81 @@
+<template lang="pug">
+.page4
+  img.so.so-0(src="@|54.jpg|")
+  img.so.so-1(src="@|10.png|")
+  img.so.so-2(src="@|17.png|" o-tap="checkItem(1)")
+  img.so.so-3(src="@|39.png|" o-tap="checkItem(2)")
+  img.so.so-4(src="@|31.png|" o-tap="checkItem(3)")
+  img.so.so-5(src="@|38.png|")
+  img.so.so-6.yumao(src="@|102.png|")
+  img.so.so-7(src="@|24.png|" o-tap="checkItem(4)")
+  img.duihao(src="@|duihao.png|")
+</template>
+<script>
+module.exports = {
+  data: {
+    activeIndex: 1
+  },
+  checkItem: function (ind) {
+    this.data.activeIndex = ind
+    console.log(this.$target.offsetLeft, this.$target.offsetTop)
+    this.query('.yumao').style.left = this.$target.offsetLeft + 40 + 'px'
+    this.query('.yumao').style.top = this.$target.offsetTop - 330 + 'px'
+    setTimeout(() => {
+      this.query('.duihao').style.left = this.$target.offsetLeft + 30 + 'px'
+      this.query('.duihao').style.top = this.$target.offsetTop + 30 + 'px'
+      setTimeout(() => {
+        owo.go('page5//scaleDown/scaleUpDown/true/scaleDown/scaleUp')
+      }, 1000);
+    }, 2000);
+  }
+}
+</script>
+<style lang="less">
+.so-0 {
+  left: 0px;
+  top: 0px;
+}
+.so-1 {
+  left: 60px;
+  top: 245px;
+  z-index: 5;
+}
+.so-2 {
+  left: 55px;
+  top: 469px;
+  z-index: 4;
+}
+.so-3 {
+  left: 55px;
+  top: 678px;
+  z-index: 3;
+}
+.so-4 {
+  left: 55px;
+  top: 886px;
+  z-index: 2;
+}
+.so-5 {
+  left: 0px;
+  top: 1118px;
+  z-index: 1;
+}
+.so-6 {
+  left: 539px;
+  top: 996px;
+  z-index: 2;
+}
+.so-7 {
+  left: 55px;
+  top: 1095px;
+  z-index: 0;
+}
+.yumao {
+  z-index: 9;
+  transition: all 2s;
+}
+.duihao {
+  position: absolute;
+  z-index: 8;
+}
+</style>

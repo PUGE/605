@@ -1,0 +1,65 @@
+<template lang="pug">
+.page2
+  .so.so-0
+    img.so.so-1(src="@|52.png|" o-animation="flicker")
+    img.so.so-2(src="@|46.png|")
+    img.so.so-3(src="@|66.png|")
+    img.so.so-4(src="@|71.png|")
+    img.so.so-5(src="@|64.png|")
+    img.so.so-6(src="@|55.png|")
+    img.so.so-7(src="@|67.png|")
+    img.so.so-8(src="@|36.jpg|")
+</template>
+<script>
+module.exports = {
+}
+</script>
+<style lang="less">
+.so-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 0;;
+}
+.so-1 {
+  left: 390px;
+  top: 1291px;
+  z-index: -1;
+}
+.so-2 {
+  left: 197px;
+  top: 1064px;
+  z-index: -2;
+}
+.so-3 {
+  left: 0px;
+  top: 1308px;
+  z-index: -3;
+}
+.so-4 {
+  left: 126px;
+  top: 1052px;
+  z-index: -4;
+}
+.so-5 {
+  left: 489px;
+  top: 383px;
+  z-index: -5;
+}
+.so-6 {
+  left: 312px;
+  top: 366px;
+  z-index: -6;
+}
+.so-7 {
+  left: 5px;
+  top: 521px;
+  z-index: -7;
+}
+.so-8 {
+  left: 0px;
+  top: 0px;
+  z-index: -8;
+}
+</style>

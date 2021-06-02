@@ -2,7 +2,7 @@
 .page-1
   img.so.so-0(src="@|12.png|")
   img.so.so-1(src="@|57.png|")
-  img.so.so-2(src="@|27.png|")
+  img.so.so-2(src="@|27.png|" o-animation="shrink" go="page2//scaleDown/scaleUpDown/true/scaleDown/scaleUp")
   img.so.so-3(src="@|45.png|")
   img.so.so-4(src="@|44.png|")
   img.so.so-5(src="@|53.png|")

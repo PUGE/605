@@ -29,65 +29,74 @@
   </head>
   <body>
     <div class="scale-box">
-    <!-- 页面[loading]-->
-    <div class="loading-box page" template="loading" style="display: none;"><img class="loading" src="https://cunchu.site/ozzx/resource/loadingLogo.png"><div class="loading-bar"><div class="num-bar"></div></div><span class="text">Loading</span><div class="num">0%</div></div>
     <!-- 页面[page1]-->
-    <div class="page-1 page" template="page1" style="display: none;"><img class="so so-0" src="./static/resource/12.png"><img class="so so-1" src="./static/resource/57.png"><img class="so so-2" src="./static/resource/27.png"><img class="so so-3" src="./static/resource/45.png"><img class="so so-4" src="./static/resource/44.png"><img class="so so-5" src="./static/resource/53.png"><img class="so so-6" src="./static/resource/8.jpg"></div></div>
+    <div class="page-1 page" template="page1" style="display: none;"><img class="so so-0" src="./static/resource/12.png"><img class="so so-1" src="./static/resource/57.png"><img class="so so-2" src="./static/resource/27.png" o-animation="shrink" go="page2//scaleDown/scaleUpDown/true/scaleDown/scaleUp"><img class="so so-3" src="./static/resource/45.png"><img class="so so-4" src="./static/resource/44.png"><img class="so so-5" src="./static/resource/53.png"><img class="so so-6" src="./static/resource/8.jpg"></div>
+    <!-- 页面[page2]-->
+    <div class="page2 page" template="page2" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/52.png" o-animation="flicker"><img class="so so-2" src="./static/resource/46.png"><img class="so so-3" src="./static/resource/66.png"><img class="so so-4" src="./static/resource/71.png"><img class="so so-5" src="./static/resource/64.png"><img class="so so-6" src="./static/resource/55.png"><img class="so so-7" src="./static/resource/67.png"><img class="so so-8" src="./static/resource/36.jpg"></div></div>
+    <!-- 页面[page3]-->
+    <div class="page3 page" template="page3" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/3-38.png"><img class="so so-2" src="./static/resource/3-37.png"><img class="so so-3" src="./static/resource/3-33.png" o-tap="checkItem(2)"><img class="so so-4" src="./static/resource/3-28.png" o-tap="checkItem(3)"><img class="so so-5" src="./static/resource/3-46.png"><img class="so so-6" src="./static/resource/3-21.png" o-tap="checkItem(1)"><img class="so so-7" src="./static/resource/3-10.png"></div><div class="so select2-0"><img class="so select2-1" src="./static/resource/select2-30.png"><img class="so select2-2" src="./static/resource/select2-29.png"><img class="so select2-3" src="./static/resource/select2-25.png" o-tap="checkItem(1)"><img class="so select2-4" src="./static/resource/select2-24.png" o-tap="checkItem(2)"><img class="so select2-5" src="./static/resource/select2-22.png" o-tap="checkItem(3)"><img class="so select2-6" src="./static/resource/select2-11.png"></div><div class="so select-30"><img class="so select-31" src="./static/resource/select3-47.png"><img class="so select-32" src="./static/resource/select3-46.png"><img class="so select-33" src="./static/resource/select3-33.png" o-tap="checkItem(2)"><img class="so select-34" src="./static/resource/select3-28.png" o-tap="checkItem(3)"><img class="so select-35" src="./static/resource/select3-23.png" o-tap="checkItem(1)"><img class="so select-36" src="./static/resource/select3-12.jpg"></div><img class="so so-8" src="./static/resource/3-49.png"><img class="so so-9" src="./static/resource/3-30.png"><img class="so so-10" src="./static/resource/3-43.jpg"><img class="duihao" src="./static/resource/duihao.png"></div>
+    <!-- 页面[page4]-->
+    <div class="page4 page" template="page4" style="display: none;"><img class="so so-0" src="./static/resource/54.jpg"><img class="so so-1" src="./static/resource/10.png"><img class="so so-2" src="./static/resource/17.png" o-tap="checkItem(1)"><img class="so so-3" src="./static/resource/39.png" o-tap="checkItem(2)"><img class="so so-4" src="./static/resource/31.png" o-tap="checkItem(3)"><img class="so so-5" src="./static/resource/38.png"><img class="so so-6 yumao" src="./static/resource/102.png"><img class="so so-7" src="./static/resource/24.png" o-tap="checkItem(4)"><img class="duihao" src="./static/resource/duihao.png"></div>
+    <!-- 页面[page5]-->
+    <div class="page5 page" template="page5" style="display: none;"><img class="so so-3" src="./static/resource/share-26.png" o-animation="shrink" o-tap="location.replace('')"><img class="so so-4" src="./static/resource/share-32.png" o-animation="shrink" o-tap="document.querySelector('.share-box').style.display = 'block'"><div class="share-box" style="display:none;"><img class="so share-0" src="./static/resource/share-box-12.png"><img class="so share-2" src="./static/resource/share-box-21.png"><img class="so share-3" src="./static/resource/share-box-18.png" o-animation="shrink"><img class="so share-4" src="./static/resource/share-box-20.png" o-tap="document.querySelector('.share-box').style.display = 'none'"></div></div>
+    <!-- 页面[page6]-->
+    <div class="page6 page" template="page6" style="display: none;"></div>
+    <!-- 页面[page7]-->
+    <div class="page7 page" template="page7" style="display: none;"></div></div>
     
 <!-- 框架script文件 -->
 <script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
 owo.script = {
-  "loading": {
+  "page1": {},
+  "page2": {},
+  "page3": {
     "data": {
-      "imgList": [""]
+      "activeIndex": 1
     },
-    "show": function show() {
-      var mum = owo.query('.num')[0];
-      var numBar = owo.query('.num-bar')[0];
-      this.preloadImages(this.data.imgList, function (e) {
-        setTimeout(function () {
-          owo.go('page1////true');
-        }, 500);
-      }, function (num) {
-        numBar.style.width = num + '%';
-        mum.innerHTML = num + '%';
-      });
-    },
-    "preloadImage": function preloadImage(src, successFn) {
-      var image = new Image();
-      image.src = src;
-
-      image.onload = function () {
-        successFn && successFn(src);
-      };
-
-      image.onerror = function (error) {
-        successFn && successFn(src);
-      };
-    },
-    "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
+    "checkItem": function checkItem(ind) {
       var _this = this;
 
-      if (!Array.isArray(srcs)) {
-        console.log('第一个参数只能是一个数组');
-      } else {
-        var allCount = srcs.length;
-        var doneCount = 0;
-        srcs.forEach(function (srcItem) {
-          _this.preloadImage(srcItem, function () {
-            doneCount++;
-            progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
-
-            if (doneCount === allCount) {
-              doneFn && doneFn();
-            }
-          });
-        });
-      }
+      this.data.activeIndex = ind;
+      console.log(this.$target.offsetLeft, this.$target.offsetTop);
+      this.query('.so-8').style.left = this.$target.offsetLeft + 'px';
+      this.query('.so-8').style.top = this.$target.offsetTop - 290 + 'px';
+      setTimeout(function () {
+        _this.query('.duihao').style.left = _this.$target.offsetLeft - 10 + 'px';
+        _this.query('.duihao').style.top = _this.$target.offsetTop - 15 + 'px';
+        setTimeout(function () {
+          owo.go('page4//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+        }, 1000);
+      }, 2000);
     }
   },
-  "page1": {}
+  "page4": {
+    "data": {
+      "activeIndex": 1
+    },
+    "checkItem": function checkItem(ind) {
+      var _this2 = this;
+
+      this.data.activeIndex = ind;
+      console.log(this.$target.offsetLeft, this.$target.offsetTop);
+      this.query('.yumao').style.left = this.$target.offsetLeft + 40 + 'px';
+      this.query('.yumao').style.top = this.$target.offsetTop - 330 + 'px';
+      setTimeout(function () {
+        _this2.query('.duihao').style.left = _this2.$target.offsetLeft + 30 + 'px';
+        _this2.query('.duihao').style.top = _this2.$target.offsetTop + 30 + 'px';
+        setTimeout(function () {
+          owo.go('page5//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+        }, 1000);
+      }, 2000);
+    }
+  },
+  "page5": {
+    "created": function created() {
+      owo.animate('rollIn', this.query('.so-0'), 1000);
+    }
+  },
+  "page6": {},
+  "page7": {}
 };
 </script>
 

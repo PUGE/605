@@ -55,3 +55,25 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 .so {
   position: absolute;
 }
+
+.page2[show="1"] .so-7 {
+  transform: scale(1.2, 1.2);
+}
+.page2[show="2"] .so-6 {
+  transform: scale(1.2, 1.2);
+}
+.page2[show="3"] .so-5 {
+  transform: scale(1.2, 1.2);
+}
+.page3 .so-0, .page3 .select2-0, .page3 .select-30 {
+  display: none;
+}
+.page3[show="1"] .so-0 {
+  display: block;
+}
+.page3[show="2"] .select2-0 {
+  display: block;
+}
+.page3[show="3"] .select-30 {
+  display: block;
+}

@@ -1,0 +1,189 @@
+<template lang="pug">
+.page3
+  .so.so-0
+    img.so.so-1(src="@|3-38.png|")
+    img.so.so-2(src="@|3-37.png|")
+    img.so.so-3(src="@|3-33.png|" o-tap="checkItem(2)")
+    img.so.so-4(src="@|3-28.png|" o-tap="checkItem(3)")
+    img.so.so-5(src="@|3-46.png|")
+    img.so.so-6(src="@|3-21.png|" o-tap="checkItem(1)")
+    img.so.so-7(src="@|3-10.png|")
+  .so.select2-0
+    img.so.select2-1(src="@|select2-30.png|")
+    img.so.select2-2(src="@|select2-29.png|")
+    img.so.select2-3(src="@|select2-25.png|" o-tap="checkItem(1)")
+    img.so.select2-4(src="@|select2-24.png|" o-tap="checkItem(2)")
+    img.so.select2-5(src="@|select2-22.png|" o-tap="checkItem(3)")
+    img.so.select2-6(src="@|select2-11.png|")
+  .so.select-30
+    img.so.select-31(src="@|select3-47.png|")
+    img.so.select-32(src="@|select3-46.png|")
+    img.so.select-33(src="@|select3-33.png|" o-tap="checkItem(2)")
+    img.so.select-34(src="@|select3-28.png|" o-tap="checkItem(3)")
+    img.so.select-35(src="@|select3-23.png|" o-tap="checkItem(1)")
+    img.so.select-36(src="@|select3-12.jpg|")
+  img.so.so-8(src="@|3-49.png|")
+  img.so.so-9(src="@|3-30.png|")
+  img.so.so-10(src="@|3-43.jpg|")
+  img.duihao(src="@|duihao.png|")
+</template>
+<script>
+module.exports = {
+  data: {
+    activeIndex: 1
+  },
+  checkItem: function (ind) {
+    this.data.activeIndex = ind
+    console.log(this.$target.offsetLeft, this.$target.offsetTop)
+    this.query('.so-8').style.left = this.$target.offsetLeft + 'px'
+    this.query('.so-8').style.top = this.$target.offsetTop - 290 + 'px'
+    setTimeout(() => {
+      this.query('.duihao').style.left = this.$target.offsetLeft - 10 + 'px'
+      this.query('.duihao').style.top = this.$target.offsetTop - 15 + 'px'
+      setTimeout(() => {
+        owo.go('page4//scaleDown/scaleUpDown/true/scaleDown/scaleUp')
+      }, 1000);
+    }, 2000);
+  }
+}
+</script>
+<style lang="less">
+.so-0 {
+  left: 0px;
+  top: 0px;
+  width: 747px;
+  height: 1139px;
+  z-index: 2;;
+}
+.so-1 {
+  left: 48px;
+  top: 920px;
+  z-index: 1;
+}
+.so-2 {
+  left: 48px;
+  top: 616px;
+  z-index: 0;
+}
+.so-3 {
+  left: 53px;
+  top: 695px;
+  z-index: -1;
+}
+.so-4 {
+  left: 53px;
+  top: 995px;
+  z-index: -2;
+}
+.so-5 {
+  right: 0px;
+  top: 111px;
+  z-index: -3;
+}
+.so-6 {
+  left: 53px;
+  top: 446px;
+  z-index: -4;
+}
+.so-7 {
+  left: 49px;
+  top: 234px;
+  z-index: -5;
+}
+.so-8 {
+  left: 489px;
+  top: 1154px;
+  z-index: 9;
+  transition: all 2s;
+}
+.so-9 {
+  left: 0px;
+  top: 1144px;
+  z-index: 2;
+}
+.so-10 {
+  left: 0px;
+  top: 0px;
+  z-index: -7;
+}
+.duihao {
+  position: absolute;
+  left: -100px;
+  top: -100px;
+  z-index: 99;
+}
+.select2-0 {
+  left: 0;
+  top: 0px;
+  width: 750px;
+  height: 1210px;
+  z-index: 0;;
+}
+.select2-1 {
+  left: 18px;
+  top: 910px;
+  z-index: -1;
+}
+.select2-2 {
+  left: 18px;
+  top: 702px;
+  z-index: -2;
+}
+.select2-3 {
+  left: 23px;
+  top: 759px;
+  z-index: -3;
+}
+.select2-4 {
+  left: 23px;
+  top: 956px;
+  z-index: -4;
+}
+.select2-5 {
+  left: 23px;
+  top: 435px;
+  z-index: -5;
+}
+.select2-6 {
+  left: 46px;
+  top: 0px;
+  z-index: -6;
+}
+.select-30 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 0;;
+}
+.select-31 {
+  left: 48px;
+  top: 910px;
+  z-index: -1;
+}
+.select-32 {
+  left: 48px;
+  top: 606px;
+  z-index: -2;
+}
+.select-33 {
+  left: 53px;
+  top: 651px;
+  z-index: -3;
+}
+.select-34 {
+  left: 53px;
+  top: 956px;
+  z-index: -4;
+}
+.select-35 {
+  left: 53px;
+  top: 412px;
+  z-index: -5;
+}
+.select-36 {
+  left: 0px;
+  top: 0px;
+  z-index: -6;
+}
+</style>
